@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html>
+<head>
+	<title>Slanga: Tambah Perkataan Baharu</title>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!--icon library-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav>
+		<div class="toggleNav">
+			<div class="toggleNavButton"></div>
+		</div>
+		<!-- User Login Button-->
+			<div class="user-login">
+					<a class="btn" href="./login.html" role="button">
+						<img src="./img/user-icon.png" height="30" width="30">
+					</a>
+			</div>
+
+		<div id="subnav">
+				<ul class="">
+					<li> <a href="./index_frontend.html">Halaman Utama</a> </li>
+					<li> <a href="./undi_perkataan.html">Undi</a> </li>
+					<li> <a href="#">About us</a> </li>
+				</ul>
+			</div>
+	</nav>
+
+	<!-- Logo header  -->
+
+	<div class="container">
+		<!-- LOGO --> 
+		<div class="logo-header logo-header-sub row justify-content-md-center">
+			<div class="col-xs-3 col-lg-4"></div>
+
+			<div class="col-xs-6 col-lg-4">
+				<img src="./img/Slanga-logo.png" alt="slanga logo" width="100%">
+			</div>
+
+			<div class="col-xs-3 col-lg-4"></div>
+		</div>
+			<!-- Close logo header -->
+
+			<!-- Cancel Tambah Perkataan -->
+			<div class="cancel_button d-none d-lg-block">
+				<a href="index_frontend.html" class="fa fa-times-circle-o"></a>
+			</div>
+			<div class="cancel_button_md d-lg-none">
+				<a href="index_frontend.html" class="fa fa-times-circle-o"></a>
+			</div>
+
+			<!--Card -->
+			<div class="row justify-content-center mt-3">
+				<div class="card-content-body col-12">
+					<div class="card-content card">
+						<div class="card-body">
+							<div class="add-new-word">
+								<h2>Menambah Perkataan Baharu</h2>
+								<p>Lorem ipsum dolor sit amet,no sea takimata sanctus est Lorem ipsum dolor sit amet.  At vero eos et accusam et justo duo dolores et ea rebum.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  consetetur sadipscing elitr,</p>
+
+								<!-- Input perkataan -->
+								<input class="form-control form-control-lg" type="text" placeholder="Perkataan">
+
+								<p><strong>Lorem ipsum dolor sit amet</strong>,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  At vero eos et accusam et justo duo dolores et ea rebum.</p>
+								<p><strong>Lorem ipsum dolor sit amet</strong>,  no sea takimata sanctus est Lorem ipsum dolor sit amet.  Stet clita kasd gubergren,  no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+								<!-- Input definasi -->
+								<textarea class="form-control" id="definasi" rows="4" placeholder="Definasi Perkataan"></textarea>
+
+								<!-- Input contoh ayat -->
+								<textarea class="form-control" id="example" rows="3" placeholder="Berikan contoh ayat untuk perkataan tersebut"></textarea>
+
+								<p>Tambahkan hashtag untuk perkataan yang akan didaftarkan</p>
+
+								<!-- Input hashtag -->
+								<div class="tags-input">
+									<ul class="tags">
+										<li class="tagAdd taglist">  
+											<input class="form-control" type="text" id="search-field" placeholder="#hashtag">
+										</li>
+									</ul>
+								</div>
+								<!-- Input loghat -->
+								<select class="form-control">
+									<option>Bahasa Melayu</option>
+									<option>Loghat Negeri Sembilan</option>
+									<option>Loghat Perlis</option>
+									<option>Loghat Terengganu</option>
+									<option>Loghat Pahang</option>
+									<option>Loghat Johor</option>
+									<option>Loghat Perak</option>
+									<option>Loghat Kuala Lumpur (Keyel)</option>
+									<option>Loghat Melaka</option>
+									<option>Loghat Sabah</option>
+									<option>Loghat Sarawak</option>
+								</select>
+								
+									<div class="disclaimer-word">
+										Definasi perkataan adalah tertakluk kepada <a href="https://about.urbandictionary.com/tos">terma</a> dan <a href="https://about.urbandictionary.com/privacy">syarat</a>.
+									</div>
+
+									<div class="tambah float-right">
+										
+										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#tambahModal">Tambah</button></div>
+
+										<!-- Modal -->
+										<div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														
+														<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+													</div>
+													<div class="modal-body">
+														<img width="100%" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/172203/IMG_3497.JPG" alt="" />
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														<button type="button" class="btn btn-primary">Save changes</button>
+													</div>
+												</div>
+											</div>
+										</div>				
+
+									</div>
+									<!-- close add new perkataan div -->
+									
+						</div>
+								<!-- Close Body Card -->
+						</div>
+						<!-- Close content Card -->
+				</div>
+					<!-- Close card -->
+
+			</div>
+				<!-- Close row -->				
+
+	</div>
+<!-- container close div-->
+
+<!-- Footer -->
+<footer>
+
+	<!-- Copyright -->
+	<div id="footer-content" class="text-center">&copy; 2018 Copyright:
+		<a href="https://zulfathly.com"> Zulfathly.com</a>
+	</div>
+	<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+<script src="./js/tags.js"></script>
+
+</body>
+</html>
